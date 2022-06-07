@@ -1,0 +1,163 @@
+            /* font family */
+            
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: 'League Spartan', sans-serif;
+                font-size: 14px;
+            }
+            /*Mobile - display property for the nav */
+            
+            .displayNone {
+                display: none;
+            }
+            /* Mobile -  header*/
+            
+            .header {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem;
+            }
+            
+            .headerDesktop {
+                display: none;
+            }
+            
+            ul {
+                list-style-type: none;
+                padding: 0px;
+            }
+            
+            li {
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+            
+            a {
+                color: black;
+            }
+            
+            #menuBtn {
+                font-size: 1.5rem;
+            }
+            /*Mobile - Main sections*/
+            
+            .text {
+                margin: 2rem 1rem;
+            }
+            
+            img {
+                width: 100%;
+            }
+            
+            .img1 {
+                position: relative;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .blured {
+                filter: blur(1.5px);
+            }
+            
+            .buttons-arrow-d {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: 0px;
+                display: flex;
+                flex-direction: row;
+                border: 1px solid black;
+            }
+            
+            .buttons-arrow-d button {
+                padding: 1.2rem;
+                background-color: black;
+                border: none;
+                color: white;
+            }
+            
+            @media only screen and (min-width: 1000px) {
+                body {
+                    height: 100vh;
+                }
+                /*Desktop - Header*/
+                .header {
+                    display: none;
+                }
+                .img {
+                    position: relative;
+                }
+                .headerDesktop {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    margin: 1rem;
+                }
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    margin-left: 2rem;
+                }
+                ul li {
+                    padding-left: 2rem;
+                }
+                a {
+                    font-size: 1.2rem;
+                    color: white;
+                }
+                li a:hover {
+                    color: #C4AB7F;
+                    border-bottom: 2px solid #C4AB7F;
+                }
+                h1:hover {
+                    color: #C4AB7F;
+                }
+                /*Desktop - Main sections*/
+                section {
+                    display: flex;
+                }
+                .section1 {
+                    height: 70vh;
+                }
+                .section2 {
+                    height: 30vh;
+                }
+                .img1 {
+                    min-width: 60vw;
+                }
+                .text1 {
+                    padding: 2rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+                .img2 {
+                    min-width: 45vh;
+                }
+                .text2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 2rem 1rem;
+                }
+                .shopNow {
+                    color: black;
+                }
+            }
+            
+            @media only screen and (min-width: 1400px) {
+                body {
+                    font-size: 1.2rem;
+                }
+            }
